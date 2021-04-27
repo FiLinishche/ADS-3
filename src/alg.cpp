@@ -48,9 +48,9 @@ std::string infx2pstfx(std::string inf) {
               } else {
                   while (!stackChar.isEmpty() &&
                          priority(stackChar.get()) >= prior) {
-                      pstfx.push_back(stackChar.get());//не воруй
-                      pstfx.push_back(' ');//мой код
-                      stackChar.pop();//пиши свой!
+                      pstfx.push_back(stackChar.get());
+                      pstfx.push_back(' ');
+                      stackChar.pop();
                   }
                   if (stackChar.isEmpty())
                       top = ch;
